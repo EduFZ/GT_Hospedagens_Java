@@ -3,9 +3,9 @@ package br.com.hospedagensgt;
 public class Hospedagens {
 	
 	private String Nome;
-	private String Endereço;
+	private String Endereco;
 	private String ValorDiaria;
-	private boolean CafeDaManha;
+	private String CafeDaManha;
 	
 	
 	
@@ -17,10 +17,10 @@ public class Hospedagens {
 
 
 
-	public Hospedagens(String nome, String endereço, String valorDiaria, boolean cafeDaManha) {
+	public Hospedagens(String nome, String endereco, String valorDiaria, String cafeDaManha) {
 		super();
 		Nome = nome;
-		Endereço = endereço;
+		Endereco = endereco;
 		ValorDiaria = valorDiaria;
 		CafeDaManha = cafeDaManha;
 	}
@@ -33,11 +33,11 @@ public class Hospedagens {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
-	public String getEndereço() {
-		return Endereço;
+	public String getEndereco() {
+		return Endereco;
 	}
-	public void setEndereço(String endereço) {
-		Endereço = endereço;
+	public void setEndereco(String endereco) {
+		Endereco = endereco;
 	}
 	public String getValorDiaria() {
 		return ValorDiaria;
@@ -45,10 +45,10 @@ public class Hospedagens {
 	public void setValorDiaria(String valorDiaria) {
 		ValorDiaria = valorDiaria;
 	}
-	public boolean isCafeDaManha() {
+	public String getCafeDaManha() {
 		return CafeDaManha;
 	}
-	public void setCafeDaManha(boolean cafeDaManha) {
+	public void setCafeDaManha(String cafeDaManha) {
 		CafeDaManha = cafeDaManha;
 	}
 	
