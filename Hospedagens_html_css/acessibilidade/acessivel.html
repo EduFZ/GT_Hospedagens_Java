@@ -12,6 +12,32 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+        <!-- Map -->
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+
+    <!-- Key Map-->
+    <script type="text/javascript">
+        window.onload = function () {
+            L.mapquest.key = 'qNp0cOq2DACGaiARunOOo1NUmr5HtRYn';
+
+            var map = L.mapquest.map('map', {
+                //Geolocalizacao da Avenida Paulista
+                center: [-23.561216803001635, -46.656472845143],
+                layers: L.mapquest.tileLayer('map'),
+                zoom: 12
+            });
+
+            map.addControl(L.mapquest.control());
+        }
+        </script>
+
+
+
+
+
 </head>
 
 <body>
@@ -42,7 +68,7 @@
            <!-- -----Acessibilidade----- -->
 
             
-           <a class="acessibilidade" id="link__acessivel" href="../index.html"><img src="../images/acessibilidade.png" /></a>
+           <a class="acessibilidade" id="link__acessivel" href="./../../index.html"><img src="../images/acessibilidade.png" /></a>
             
 
         </div>
@@ -333,6 +359,22 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- -----API mapquest----- -->
+
+
+
+        <div class="card h-100 script_card">
+
+            <!-- Map div verificar responsividade -->
+            <div id="map" style="width: 100%; height: 100%;"></div>
+        </div>
+
+
+
+
+
 
     </main>
 
